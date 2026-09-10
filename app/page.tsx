@@ -53,12 +53,12 @@ export default function Home() {
         </header>
          <div className="flex justify-center bg-[#ebebeb] h-[600px] items-center ">
           
-            <form onSubmit={sendForm} className="flex mt-10 flex-col justify-around items-center border-2 bg-white  rounded-2xl w-[500px] h-[300px]" action="">
+            <form onSubmit={sendForm} className="flex mt-10 flex-col justify-around items-center border-1 bg-white  rounded-2xl w-[500px] h-[300px] border-gray-400" action="">
                <h1 className="text-2xl">Realize seu Login</h1>
 
-               <input onChange={(e)=>{setEmail(e.target.value)}} value={email} placeholder="Digite seu email de acesso" className="pl-5 h-[45px] border-2 w-[300px]" type="email" name="" id="" />
-               <input onChange={(e)=>{setPassword(e.target.value)}} placeholder="Digite sua senha para acessar" className="pl-5 h-[45] border-2 w-[300px]" type="password" name="" id="" />
-               <span>  <input onClick={()=>setCard(true)} className="w-[200px] h-[50px] text-white cursor-pointer border-2 rounded-sm border-gray-400 bg-blue-500" type="submit" value="ENTRE" /></span>
+               <input onChange={(e)=>{setEmail(e.target.value)}} value={email} placeholder="Digite seu email de acesso" className="pl-5 h-[45px] border-1 border-gray-400 w-[300px]" type="email" name="" id="" />
+               <input onChange={(e)=>{setPassword(e.target.value)}} placeholder="Digite sua senha para acessar" className="pl-5 h-[45] border-1 border-gray-400 w-[300px]" type="password" name="" id="" />
+               <span>  <input onClick={()=>setCard(true)} className="w-[200px] h-[50px] text-white cursor-pointer border-1 rounded-sm border-gray-400 bg-blue-500" type="submit" value="ENTRE" /></span>
               
             </form>
            

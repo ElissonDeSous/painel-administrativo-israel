@@ -7,7 +7,7 @@ export default function Header(){
             <nav className="h-[400px]  ">
                 <div className="border-b-2 border-gray-600 p-2  flex justify-center items-center">
                     <GiInjustice size={30} className="text-amber-300 mr-2" />
-                   <h1 className="text-2xl text-center"> Dr Israel</h1>
+                   <h1 className="text-2xl text-center mt-5"> Dr Israel</h1>
                 </div>
                 
 
