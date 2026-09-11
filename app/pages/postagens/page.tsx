@@ -78,18 +78,26 @@ export default function Postagens() {
 
                
 
-               {card && (
-                  <div className="fles justify-center items-center w-full">
-                     <div className={`${styleMsg === "sucesso" || styleMsg == "erro" ? "bg-green-500" : "bg-red-500"} w-[400px] h-[50px] flex justify-center items-center text-2xl`}>
+              
+
+
+            </div>
+
+            {card && (
+                  <div className="flex justify-center items-center   fixed left-24 bg-black/50 h-full w-full ">
+                     <div className={`${styleMsg === "sucesso"  ? "bg-green-500" : "bg-red-400"} w-[600px] h-[100px] flex justify-center items-center text-2xl`}>
                         {mensagem}
                      </div>
                   </div>
 
                )}
-
-
-            </div>
+           
          </div>
+
+           
       </>
+      
    )
+
+   
 }
