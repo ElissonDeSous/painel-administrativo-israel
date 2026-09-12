@@ -17,7 +17,7 @@ export default function Header(){
              <ul className="h-full flex flex-col justify-around">
                 <li className=" border-1 p-2 border-gray-600 w-[200px] cursor-pointer hover:bg-blue-600  flex "> <IoMdHome size={20} className="mr-2" /> <Link href="dashboard">Pagina Inicial</Link></li>
                 <li className=" border-2 p-2 border-gray-600 w-[200px] cursor-pointer hover:bg-blue-600  flex d text-justify"> <MdOutlinePostAdd className="mr-2" size={20}/> <Link href="postagens">Postagens</Link></li>
-                <li className="border-1 p-2 border-gray-600 cursor-pointer hover:bg-blue-600 w-[200px]  flex"><CiBoxList className="text-center mr-2" size={20} /><Link href="">Listas de Postagens</Link></li>
+                <li className="border-1 p-2 border-gray-600 cursor-pointer hover:bg-blue-600 w-[200px]  flex"><CiBoxList className="text-center mr-2" size={20} /><Link href="lista-postagens">Listas de Postagens</Link></li>
              </ul>
             </nav>
             <div className="w-[200px] mb-10 flex items-center justify-center text-2xl bg-blue-600">
