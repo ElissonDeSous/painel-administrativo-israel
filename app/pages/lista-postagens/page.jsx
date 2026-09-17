@@ -63,7 +63,7 @@ export default function ListaPostagens() {
             <div className="w-full flex flex-col ml-[300px] items-center">
                <div className="mt-20 w-full flex flex-col items-start h-[800px]  bg-[#ebebeb]">
                   <div className="flex flex-col justify-center items-center mt-10 ml-5 ">
-                     <h1 className="text-3xl font-bold text-gray-600">Gerenciamento de postagens</h1>
+                     <h2 className="text-[25px] font-bold text-gray-600">Gerenciamento de postagens</h2>
                      <p>Gerencie suas postagens aqui, exclua, visualize</p>
                   </div>
 
@@ -84,18 +84,18 @@ export default function ListaPostagens() {
                            console.log(conteudo.imagem)
                            return (
                            <div key={postagens.Id} className="border-gray-200 border-1 font-bold   rounded-[10px] flex justify-around items-center mb-10 mt-10 w-full">
-                            <div className="flex flex-col justify-center items-center h-[130px]">
+                            <div className="flex flex-col justify-center items-center ">
                                 {
                                  
                                   conteudo.imagem && 
-                                   <Image src={conteudo.imagem} className=" m-5 " width={100} height={100} alt="imagem do banco" />
+                                   <Image src={conteudo.imagem} className=" m-2 " width={80} height={80} alt="imagem do banco" />
                                      
                                   
                                 }
                                 </div>
-                                 <h2 className=" cursor-pointer hover:text-blue-600  flex  justify-center items-center h-full"><GrView size={40} /></h2>
+                                 <h2 className=" cursor-pointer hover:text-blue-600  flex  justify-center items-center h-full"><GrView size={20} /></h2>
 
-                                 <h2 onClick={()=>Delete(postagens.Id)} className=" hover:text-red-500 cursor-pointer  justify-center flex items-center h-full"><MdDelete size={40} /></h2>
+                                 <h2 onClick={()=>Delete(postagens.Id)} className=" hover:text-red-500 cursor-pointer  justify-center flex items-center h-full"><MdDelete size={20} /></h2>
                               </div>
                               
                            )

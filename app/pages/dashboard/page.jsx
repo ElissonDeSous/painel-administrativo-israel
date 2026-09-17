@@ -105,9 +105,12 @@ export default function dashboard() {
 
                                 console.log(conteudo)
                                 return (
-                                    <div key={postagens.Id} className="flex m-5 border-1 justify-around  items-center h-[150px]  justify-around border-gray-200 ">
-                                        {conteudo.imagem &&
-                                            <Image className="mt-5 border-1" width={100} height={100} src={conteudo.imagem} alt="imagem vinda do banco de dados" />}
+                                    <div key={postagens.Id} className="flex m-5 border-1 justify-around  items-center  justify-around border-gray-200 ">
+                                        <div className="flex justify-center items-center">
+                                            {conteudo.imagem &&
+                                            <Image className="mt-5 border-1" width={80} height={80} src={conteudo.imagem} alt="imagem vinda do banco de dados" />}
+                                        </div>
+                                      
                                         <h3 className=" font-bold w-[250px] m-5   flex justify-center items-center p-2">{conteudo.texto.slice(0, 70)}</h3>
                                         <h3 className="font-bold  w-[200px] h-[30px] flex justify-center items-center p-2">{Usuario.Name}</h3>
                                     </div>
