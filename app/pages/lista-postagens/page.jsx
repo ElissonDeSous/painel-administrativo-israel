@@ -61,7 +61,7 @@ export default function ListaPostagens() {
             <Header />
 
             <div className="w-full flex flex-col ml-[300px] items-center">
-               <div className="mt-20 w-full flex flex-col items-start h-[800px]  bg-[#ebebeb]">
+               <div className="mt-20 w-full flex flex-col items-start   bg-[#ebebeb]">
                   <div className="flex flex-col justify-center items-center mt-10 ml-5 ">
                      <h2 className="text-[25px] font-bold text-gray-600">Gerenciamento de postagens</h2>
                      <p>Gerencie suas postagens aqui, exclua, visualize</p>
