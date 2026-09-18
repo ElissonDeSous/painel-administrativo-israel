@@ -105,10 +105,10 @@ export default function dashboard() {
 
                                 console.log(conteudo)
                                 return (
-                                    <div key={postagens.Id} className="flex m-5 border-1 justify-around  items-center  justify-around border-gray-200 ">
+                                    <div key={postagens.Id} className="flex m-5 border-1 justify-around  items-center  justify-around border-gray-200 h-[100px]">
                                         <div className="flex justify-center items-center">
                                             {conteudo.imagem &&
-                                            <Image className="mt-5 border-1" width={80} height={80} src={conteudo.imagem} alt="imagem vinda do banco de dados" />}
+                                            <Image className="mt-2 border-1" width={50} height={50} src={conteudo.imagem} alt="imagem vinda do banco de dados" />}
                                         </div>
                                       
                                         <h3 className=" font-bold w-[250px] m-5   flex justify-center items-center p-2">{conteudo.texto.slice(0, 70)}</h3>

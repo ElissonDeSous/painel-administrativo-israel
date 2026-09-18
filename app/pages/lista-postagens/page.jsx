@@ -83,12 +83,12 @@ export default function ListaPostagens() {
                            const conteudo = reviwe(imagemConvertida)
                            console.log(conteudo.imagem)
                            return (
-                           <div key={postagens.Id} className="border-gray-200 border-1 font-bold   rounded-[10px] flex justify-around items-center mb-10 mt-10 w-full">
+                           <div key={postagens.Id} className="border-gray-200 border-1 font-bold h-[100px]  rounded-[10px] flex justify-around items-center mb-10 mt-10 w-full">
                             <div className="flex flex-col justify-center items-center ">
                                 {
                                  
                                   conteudo.imagem && 
-                                   <Image src={conteudo.imagem} className=" m-2 " width={80} height={80} alt="imagem do banco" />
+                                   <Image src={conteudo.imagem} className=" m-2 " width={50} height={50} alt="imagem do banco" />
                                      
                                   
                                 }
